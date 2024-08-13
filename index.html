@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="left">
+      <a href="#">Introduction</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/AkashKeote" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/akashkeote/" target="_blank">Linkedin</a>
+      <a href="mailto:keoteakash@gmail.com">Email</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Profile -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Akash 👋</h2>
+        <p>I am currently pursuing a B.Tech in Computer Science and Engineering at Raisoni College, with a keen interest in Data Structures and Algorithms (DSA). My focus helps me dive deeper into problem solving and coding. Let’s look for opportunities to learn and innovate together.</p>
+
+        <div class="links">
+          <a href="#skills">Skills</a>
+          <a href="#learning-journey">Learning Journey</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/profile-pic.png" alt="Akash Keote headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Here are some of the skills I've acquired.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="HTML logo">
+          <span>HTML</span>
+        </div>
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="CSS logo">
+          <span>CSS</span>
+        </div>
+        <div class="cell">
+          <img src="images/java.png" alt="Java logo">
+          <span>Java</span>
+        </div>
+        <div class="cell">
+          <img src="images/Linux.png" alt="Linux logo">
+          <span>Linux</span>
+        </div>
+        <div class="cell">
+          <img src="images/Windows.png" alt="Windows logo">
+          <span>Windows</span>
+        </div>
+        <div class="cell">
+          <img src="images/C.png" alt="C logo">
+          <span>C</span>
+        </div>
+        <div class="cell">
+          <img src="images/365.png" alt="Microsoft Office logo">
+          <span>Microsoft Office</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Learning Journey -->
+    <section id="learning-journey" class="learning-journey-section">
+      <h2>Learning Journey</h2>
+      <div class="text">
+        <p>As a Computer Science student, I explore new technologies and concepts. I started with basics and am now working on projects to apply my knowledge.</p>
+        <ul>
+          <li>Completed online courses in HTML, CSS, and Java.</li>
+          <li>Built small projects.</li>
+          <li>Currently working on a college matching app.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="text">
+        Near Vasudev Nagar, Nagpur 440016<br />
+       Boys Hostel GHRCEMN Room No - 402<br />
+        Contact: 9307451323<br />
+        Email - keoteakash@gmail.com
+      </div>
+
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
