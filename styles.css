@@ -8,7 +8,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
-  background: linear-gradient(to bottom right, var(--background-color-start), var(--background-color-end));
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Dark black to violet gradient background */
+  background-attachment: fixed; /* Keeps background fixed during scroll */
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
@@ -82,8 +83,8 @@ nav .right a:hover {
   border-radius: 50%;
 }
 
-.skills-section,
-.learning-journey-section,
+.skills-section, 
+.learning-journey-section, 
 .contact-section {
   padding: 20px;
   margin-bottom: 40px;
@@ -92,14 +93,14 @@ nav .right a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.skills-section h2,
-.learning-journey-section h2,
+.skills-section h2, 
+.learning-journey-section h2, 
 .contact-section h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.skills-section .text,
+.skills-section .text, 
 .learning-journey-section .text {
   margin-bottom: 20px;
 }
@@ -130,7 +131,7 @@ nav .right a:hover {
   flex-direction: column;
 }
 
-.contact-section form input,
+.contact-section form input, 
 .contact-section form textarea {
   border: 1px solid var(--link-color);
   padding: 10px;
@@ -154,20 +155,20 @@ nav .right a:hover {
 
 @media (max-width: 600px) {
   nav {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   nav .right a {
-    font-size: 14px;
+      font-size: 14px;
   }
 
   .hero-section {
-    flex-direction: column;
-    text-align: center;
+      flex-direction: column;
+      text-align: center;
   }
 
   .hero-section .headshot img {
-    width: 150px;
+      width: 150px;
   }
 }
