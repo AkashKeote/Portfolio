@@ -85,6 +85,7 @@ nav .right a:hover {
 
 .skills-section, 
 .learning-journey-section, 
+.download-section, 
 .contact-section {
   padding: 20px;
   margin-bottom: 40px;
@@ -95,13 +96,15 @@ nav .right a:hover {
 
 .skills-section h2, 
 .learning-journey-section h2, 
+.download-section h2, 
 .contact-section h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 .skills-section .text, 
-.learning-journey-section .text {
+.learning-journey-section .text, 
+.download-section .text {
   margin-bottom: 20px;
 }
 
@@ -126,49 +129,20 @@ nav .right a:hover {
   margin-right: 10px;
 }
 
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-section form input, 
-.contact-section form textarea {
-  border: 1px solid var(--link-color);
-  padding: 10px;
-  margin-bottom: 10px;
+.download-section .download-link {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--link-color);
   border-radius: 4px;
+  text-decoration: none;
+  color: var(--link-color);
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.contact-section form button {
+.download-section .download-link:hover {
   background-color: var(--link-color);
   color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
 }
 
-.contact-section form button:hover {
-  background-color: darken(var(--link-color), 10%);
-}
-
-@media (max-width: 600px) {
-  nav {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  nav .right a {
-      font-size: 14px;
-  }
-
-  .hero-section {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .hero-section .headshot img {
-      width: 150px;
-  }
-}
+.contact-section form {
