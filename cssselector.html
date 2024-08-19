@@ -1,1 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Showcase</title>
+    <style>
+        /* Basic reset for common elements */
+        body, h1, h2, h3, p, div {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styles for the whole page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        /* Container and combinator selectors */
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .container p {
+            font-style: normal;
+            color: #28a745;
+        }
+
+        .container > .special {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .note {
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .note + .note2 {
+            border: 2px solid #fd7e14;
+        }
+
+        .note ~ .note2 {
+            color: #6f42c1;
+        }
+
+        /* Group selector */
+        h1, h2, h3 {
+            color: #343a40;
+        }
+
+        /* Anchor pseudo-classes */
+        a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff5722;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #6f42c1;
+        }
+
+        a:active {
+            color: #d9534f;
+        }
+
+        /* Button and input pseudo-classes */
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:focus {
+            outline: 2px solid #007bff;
+        }
+
+        input {
+            padding: 8px;
+            border: 2px solid #ced4da;
+            border-radius: 5px;
+            transition: border 0.3s;
+        }
+
+        input:invalid {
+            border: 2px solid #dc3545;
+        }
+
+        input:valid {
+            border: 2px solid #28a745;
+        }
+
+        /* Pseudo-elements */
+        p::first-line {
+            font-weight: bolder;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: #007bff;
+        }
+
+        /* Hover effect */
+        .hoverable {
+            padding: 20px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            background-color: #ffffff;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .hoverable:hover {
+            background-color: #e0f7fa;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 1.7em;
+            }
+            h3 {
+                font-size: 1.4em;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Selectors Showcase by Akash</h1>
+    </header>
+
+    <div class="content">
+        <h2>Element Selector</h2>
+        <p>Akash is using Element Selector</p>
+
+        <h2>Class Selector</h2>
+        <p class="highlight">Akash is using Class Selector</p>
+
+        <h2>ID Selector</h2>
+        <p id="unique">Akash is using ID selector with Italic font</p>
+
+        <h2>Combinator Selectors</h2>
+        <h3>Descendant Selector</h3>
+        <div class="container">
+            <p>Akash styled this in a container using Descendant Selector</p>
+            <p class="special">Akash used direct child styling here</p>
+        </div>
+
+        <h3>Adjacent Sibling Selector</h3>
+        <div class="note">This is the first note by Akash</div>
+        <div class="note2">This is the note directly following the first one</div>
+
+        <h3>General Sibling Selector</h3>
+        <div class="note">This is another note by Akash</div>
+        <div class="note2">This is a note following the previous note</div>
+
+        <h2>Anchor Pseudo-Classes</h2>
+        <p><a href="#">Akash is using anchor pseudo-classes. Hover over to see the effect.</a></p>
+        <p><a href="#">Visited link color change. Akash is using pseudo-class :visited here.</a></p>
+
+        <h2>Button and Input Pseudo-Classes</h2>
+        <button>Hover or Focus on this Button</button>
+        <input type="text" placeholder="Type something..." required>
+    </div>
+</body>
+
+</html>
