@@ -13,48 +13,39 @@
     <div class="left">
       <a href="#">Introduction</a>
     </div>
-
     <div class="right">
+      <a href="#skills">Skills</a>
+      <a href="#learning-journey">Learning Journey</a>
+      <a href="#contact">Contact</a>
       <a href="https://github.com/AkashKeote" target="_blank">Github</a>
-      <a href="https://www.linkedin.com/in/akashkeote/" target="_blank">Linkedin</a>
+      <a href="https://www.linkedin.com/in/akashkeote/" target="_blank">LinkedIn</a>
       <a href="mailto:keoteakash@gmail.com">Email</a>
     </div>
   </nav>
 
   <main>
     <!-- SECTION 1: Profile -->
-    <section class="hero-section">
+    <section class="hero-section fade-in">
       <div class="text">
         <h2>Hi, I'm Akash 👋</h2>
         <p>I am currently pursuing a B.Tech in Computer Science and Engineering at Raisoni College, with a keen interest in Data Structures and Algorithms (DSA). My focus helps me dive deeper into problem solving and coding. Let’s look for opportunities to learn and innovate together.</p>
-
-        <div class="links">
-          <a href="#skills">Skills</a>
-          <a href="#learning-journey">Learning Journey</a>
-          <a href="#contact">Contact</a>
-        </div>
       </div>
-
       <div class="headshot">
-        <img src="images/profile.jpg" alt="Akash Keote ">
+        <img src="images/profile.jpg" alt="Akash Keote">
       </div>
     </section>
 
     <!-- SECTION 2: Brand Video -->
-    <section class="video-section">
+    <section class="video-section fade-in">
       <video controls autoplay muted loop>
-          <source src="images/spiderman-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <source src="images/spiderman-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
 
     <!-- SECTION 3: Skills -->
-    <section id="skills" class="skills-section">
+    <section id="skills" class="skills-section fade-in">
       <h2>Skills</h2>
-      <div class="text">
-        Here are some of the skills I've acquired.
-      </div>
-
       <div class="cells">
         <div class="cell">
           <img src="images/html-logo.webp" alt="HTML logo">
@@ -88,58 +79,30 @@
     </section>
 
     <!-- SECTION 4: Learning Journey -->
-    <section id="learning-journey" class="learning-journey-section">
+    <section id="learning-journey" class="learning-journey-section fade-in">
       <h2>Learning Journey</h2>
-      <div class="text">
-        <p>As a Computer Science student, I explore new technologies and concepts. I started with basics and am now working on projects to apply my knowledge.</p>
-        <ul>
-          <li>Completed online courses in HTML, CSS, and Java.</li>
-          <li>Built small projects.</li>
-          <li>Currently working on a college matching app.</li>
-        </ul>
-      </div>
+      <p>As a Computer Science student, I explore new technologies and concepts. I started with basics and am now working on projects to apply my knowledge.</p>
     </section>
 
-    <!-- SECTION 5: Download -->
-    <section id="download" class="download-section">
-      <h2>Download Software</h2>
-      <div class="text">
-        <p>Feel free to download the software below:</p>
-        <a href="https://drive.google.com/file/d/1M55o6E3tvjJA-oT1IVCPrLPCVE-2h66O/view?usp=sharing" download class="download-link">Download LG OSC</a>
-      </div>
-    </section>
-
-    <section id="view" class="download-section">
-      <h2>View</h2>
-      <div class="text">
-        <p>VIEW</p>
-        <a href="/cssselector.html" class="download-link">CSS Selector</a>
-      </div>
-    </section>
-
-    <!-- SECTION 6: Contact -->
-    <section id="contact" class="contact-section">
+    <!-- SECTION 5: Contact -->
+    <section id="contact" class="contact-section fade-in">
       <h2>Contact</h2>
-      <div class="text">
-        Near Vasudev Nagar, Nagpur 440016<br />
-        Boys Hostel GHRCEMN Room No - 402<br />
-        Contact: 9307451323<br />
-        Email - keoteakash@gmail.com
-      </div>
-
+      <p>Near Vasudev Nagar, Nagpur 440016<br>
+      Boys Hostel GHRCEMN Room No - 402<br>
+      Contact: 9307451323<br>
+      Email - keoteakash@gmail.com</p>
       <form>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
-
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
-
         <label for="message">Message</label>
         <textarea id="message" name="message" cols="30" rows="10" required></textarea>
-
         <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
