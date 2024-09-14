@@ -129,3 +129,38 @@ section {
 .scroll-in-view {
   opacity: 1;
 }
+
+:root {
+  --text-color: #333;
+  --background-color: #fff;
+  --link-color: #007bff;
+}
+
+body.hacker-mode {
+  --text-color: #0f0;
+  --background-color: #000;
+  --link-color: #0f0;
+  font-family: 'Courier New', monospace;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav, section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav a {
+  color: var(--link-color);
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--link-color);
+}
+
+nav .right a:hover {
+  color: var(--link-color);
+}
