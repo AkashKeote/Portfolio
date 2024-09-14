@@ -7,6 +7,10 @@ document.addEventListener('scroll', function() {
       }
     });
   });
+document.getElementById('hacker-mode-toggle').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.body.classList.toggle('hacker-mode');
+});
 
   window.addEventListener('scroll', () => {
     let sections = document.querySelectorAll('section');
