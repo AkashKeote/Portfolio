@@ -378,4 +378,73 @@ body {
   filter: grayscale(100%);
 }
 
+/* Mobile optimization */
+@media (max-width: 768px) {
+  /* Adjust navigation links */
+  nav .left, nav .right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .left a, nav .right a {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Stack sections for mobile */
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-section .headshot img {
+    width: 150px;
+  }
+  .hero-section .text h2 {
+    font-size: 28px;
+  }
+  
+  /* Skills section */
+  .skills-section .cells {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-section .cell {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  /* Video section */
+  .video-section h2 {
+    font-size: 24px;
+  }
+  .video-section video {
+    width: 100%;
+  }
+
+  /* Contact form adjustments */
+  .contact-section form {
+    gap: 10px;
+  }
+  .contact-section form input,
+  .contact-section form textarea {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Additional fine-tuning for small screens */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  
+  nav .left a, nav .right a {
+    font-size: 14px;
+  }
+  
+  .hero-section .text h2 {
+    font-size: 24px;
+  }
+}
+
 
