@@ -331,4 +331,51 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+/* Hacker Mode Style */
+.hacker-mode {
+  background-color: black;
+  color: #00ff00;
+}
+
+.hacker-mode nav,
+.hacker-mode .hero-section,
+.hacker-mode .skills-section,
+.hacker-mode .learning-journey-section,
+.hacker-mode .download-section,
+.hacker-mode .contact-section {
+  background: black;
+  color: #00ff00;
+  box-shadow: none;
+  border: none;
+}
+
+.hacker-mode a {
+  color: #00ff00;
+}
+
+.hacker-mode a:hover {
+  color: #00cc00;
+}
+
+.hacker-mode .hero-section h2,
+.hacker-mode .skills-section h2,
+.hacker-mode .learning-journey-section h2,
+.hacker-mode .contact-section h2 {
+  color: #00ff00;
+}
+
+.hacker-mode .cell,
+.hacker-mode .download-link,
+.hacker-mode form input,
+.hacker-mode form textarea,
+.hacker-mode form button {
+  background: black;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+
+.hacker-mode .video-section video {
+  filter: grayscale(100%);
+}
+
 
