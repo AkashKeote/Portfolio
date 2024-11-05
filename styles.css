@@ -103,11 +103,28 @@ nav .right a:hover, nav .right a.active {
   transform: scale(1.05);
 }
 
+.video-section {
+  position: relative;
+  text-align: center; 
+  padding: 20px; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px; 
+}
+
+.video-section h2 {
+  font-size: 32px; 
+  font-weight: bold; 
+  color: #ffffff; 
+  margin-bottom: 15px; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
 .video-section video {
-  border-radius: 10px;
+  border-radius: 10px; 
   max-width: 100%;
   height: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .skills-section,
