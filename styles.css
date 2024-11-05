@@ -3,10 +3,14 @@
   --link-color: #007bff;
   --background-color-start: #f0f0f0;
   --background-color-end: #e0e0e0;
+  --section-bg-color: #ffffff;
+  --nav-bg-color: #ffffff;
+  --highlight-color: #0056b3;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 html {
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 body {
@@ -26,30 +30,39 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  background-color: var(--nav-bg-color);
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 nav .left a, nav .right a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 nav .right a:hover, nav .right a.active {
-  color: var(--link-color);
+  color: var(--highlight-color);
   font-weight: bold;
-  border-bottom: 2px solid var(--link-color);
+  border-bottom: 2px solid var(--highlight-color);
+  padding-bottom: 5px;
 }
 
 section {
-  padding: 60px 20px;
-  margin-bottom: 40px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 60px 30px;
+  margin-bottom: 50px;
+  background-color: var(--section-bg-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .hero-section {
@@ -59,30 +72,42 @@ section {
 }
 
 .headshot img {
-  width: 200px;
+  width: 180px;
   border-radius: 50%;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
 }
 
 .video-section video {
   border-radius: 8px;
   max-width: 100%;
   height: auto;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
 }
 
 .skills-section .cells {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .skills-section .cell {
   display: flex;
   align-items: center;
   width: 150px;
-  padding: 10px;
+  padding: 12px;
   margin: 5px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   background: #fff;
+  box-shadow: 0 2px 4px var(--box-shadow-color);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-section .cell:hover {
+  background-color: var(--highlight-color);
+  color: #fff;
+  transform: translateY(-3px);
 }
 
 .skills-section .cell img {
@@ -97,28 +122,33 @@ section {
 
 .contact-section form label {
   margin-top: 10px;
+  font-weight: 500;
 }
 
 .contact-section form input,
 .contact-section form textarea {
-  padding: 10px;
+  padding: 12px;
+  margin-top: 8px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .contact-section form button {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: var(--link-color);
   color: #fff;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-section form button:hover {
-  background-color: #0056b3;
+  background-color: var(--highlight-color);
+  transform: translateY(-2px);
 }
 
 .fade-in {
@@ -128,12 +158,6 @@ section {
 
 .scroll-in-view {
   opacity: 1;
-}
-
-:root {
-  --text-color: #333;
-  --background-color: #fff;
-  --link-color: #007bff;
 }
 
 body.hacker-mode {
