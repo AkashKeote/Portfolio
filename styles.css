@@ -27,6 +27,12 @@ nav {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   transition: background 0.3s ease;
+  margin-bottom: 20px; /* Space between nav and hero */
+}
+
+nav .left, nav .right {
+  display: flex;
+  align-items: center;
 }
 
 nav .left a, nav .right a {
@@ -52,6 +58,7 @@ nav .right a:hover, nav .right a.active {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease;
+  margin-bottom: 40px; /* Space between hero and following sections */
 }
 
 .hero-section:hover {
