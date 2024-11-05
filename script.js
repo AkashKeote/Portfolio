@@ -12,6 +12,7 @@ document.getElementById('hacker-mode-toggle').addEventListener('click', function
   document.body.classList.toggle('hacker-mode');
 });
 
+
   window.addEventListener('scroll', () => {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('nav .right a');
