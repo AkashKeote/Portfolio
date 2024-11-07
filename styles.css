@@ -271,7 +271,7 @@ nav .right a:hover, nav .right a.active {
 }
 
 body {
-  background: linear-gradient(135deg, #0f253b7a, #0d4a5e00, #375e6d);
+  background: linear-gradient(135deg, #8aacce7a, #beefff7c, #96bac9);
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
 }
