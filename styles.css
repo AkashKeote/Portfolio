@@ -469,4 +469,12 @@ body {
 .view-resume-button:hover {
   background-color: #45a049; 
 }
-
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none; 
+  
+}
